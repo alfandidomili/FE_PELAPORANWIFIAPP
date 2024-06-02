@@ -127,7 +127,7 @@ const CreateEvidenPage = ({
          const tiketData = tiketOrder.data.filter(
             (tiket) =>
                tiket.idUsers === userId?.idUsers &&
-               tiket.statusOrder.statusName === "Finish"
+               tiket.statusOrder.statusName === "Selesai"
          );
          setTiketFilter(tiketData);
          console.log(tiketData, "tiketfiltrr");
@@ -137,11 +137,11 @@ const CreateEvidenPage = ({
    }, [tiketOrder]);
 
    const assignedStatus = categoriesStatus.filter(
-      (category) => category.statusName === "Finish"
+      (category) => category.statusName === "Selesai"
    );
 
    const assignedStatusEvidence = categoriesStatusEviden.filter(
-      (category) => category.evidenceName === "Assigned"
+      (category) => category.evidenceName === "Terkirim"
    );
    return (
       <>
@@ -326,7 +326,7 @@ const CreateEvidenPage = ({
                      </Select> */}
                   </Form.Item>
                   <Form.Item>
-                     <Button type="primary" htmlType="submit">
+                     <Button style={{backgroundColor:"red"}} type="primary" htmlType="submit">
                         Create Eviden
                      </Button>
                   </Form.Item>
