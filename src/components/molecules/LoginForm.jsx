@@ -75,7 +75,7 @@ const LoginForm = ({ onFinish, loading, validationErrors }) => {
             <Col span={24}>
                <Form.Item>
                   <Button
-                     type="primary"
+                     // type="primary"
                      htmlType="submit"
                      block
                      disabled={loading}
