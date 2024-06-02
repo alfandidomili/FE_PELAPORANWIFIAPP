@@ -1,8 +1,10 @@
 import React from "react";
 import { Form, Button, Checkbox, Spin, Row, Col, Input } from "antd";
 import { UserOutlined, LockOutlined, GoogleOutlined } from "@ant-design/icons";
+import "./molecules.css";
 import InputField from "../atoms/InputField";
 import { Link } from "react-router-dom";
+
 
 const LoginForm = ({ onFinish, loading, validationErrors }) => {
    return (
@@ -25,8 +27,8 @@ const LoginForm = ({ onFinish, loading, validationErrors }) => {
                Array.isArray(validationErrors) &&
                validationErrors.find((error) => error.name === "usernameId")
                   ? validationErrors.find(
-                       (error) => error.name === "usernameId"
-                    ).errors[0]
+                     (error) => error.name === "usernameId"
+                  ).errors[0]
                   : ""
             }
          >
@@ -50,7 +52,7 @@ const LoginForm = ({ onFinish, loading, validationErrors }) => {
                Array.isArray(validationErrors) &&
                validationErrors.find((error) => error.name === "password")
                   ? validationErrors.find((error) => error.name === "password")
-                       .errors[0]
+                     .errors[0]
                   : ""
             }
          >
@@ -75,23 +77,18 @@ const LoginForm = ({ onFinish, loading, validationErrors }) => {
             <Col span={24}>
                <Form.Item>
                   <Button
-                     // type="primary"
+                     type="primary"
                      htmlType="submit"
                      block
                      disabled={loading}
-                     Style = {{
-                        width: "100%",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        color: isHovered ? "red" : "white",
-                        backgroundColor: isHovered ? "white" : "#fe3e41",
-                        border: isHovered ? "1px solid red" : "1px solid #fe3e41",
-                        transition: "all 0.3s ease",
-                        cursor:"pointer"
-                        }}
+                     style = {{ 
+                        backgroundColor: "#Fe3e41",
+                        transition: "background-color 0.3s ease",
+                     }}
+                     // className="bttn-login"
+                     
                   >
-                     {loading ? <Spin size="small" /> : "Login"}
+                     {loading ? <Spin size="small" /> : "Masuk"}
                      
                   </Button>
                </Form.Item>
