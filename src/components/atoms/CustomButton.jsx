@@ -16,7 +16,13 @@ const CustomButton = ({ loading, onClick, children, icon }) => {
          type="primary"
          disabled={loading}
          onClick={handleClick}
-         className="btn-login"
+         style={{
+            backgroundColor:"red",
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+         }}
       >
          {!loading && icon}{" "}
          {/* Tampilkan ikon hanya jika tidak dalam proses loading */}

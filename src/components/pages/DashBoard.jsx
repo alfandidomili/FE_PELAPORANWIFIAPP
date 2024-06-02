@@ -23,11 +23,11 @@ const DashBoard = () => {
             TitleSecondHeaderPage={"Lets see overview dashboard"}
          /> */}
          <MainTemplatePageCountainer
-            TitleHeaderPage={"Overview Dashboard"}
+            TitleHeaderPage={"Hi, Selamat Datang"}
             icon={<DownloadOutlined />}
-            buttonName={"Download"}
+            buttonName={"Unduh"}
             type={"primary"}
-            TitleSecondHeaderPage={"Lets see overview dashboard"}
+            TitleSecondHeaderPage={"Lihat apa yang kita lakukan hari ini"}
          />
          <Content
             style={{
@@ -41,7 +41,7 @@ const DashBoard = () => {
             }}
          >
             <div>
-               <h1>TELKOM WIFI LAPORAN APP</h1>
+               <h1>APLIKASI PELAPORAN MITRA INDIHOME PLASA TONDANO</h1>
             </div>
          </Content>
       </>

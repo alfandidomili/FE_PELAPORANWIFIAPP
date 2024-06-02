@@ -174,7 +174,7 @@ const MenuItems = ({
                                  padding: "7px",
                                  backgroundColor:
                                     item.key === selectedMenuKey
-                                       ? "#1677ff"
+                                       ? "red"
                                        : "inherit",
                                  color:
                                     item.key === selectedMenuKey ? "white" : "",
@@ -202,7 +202,7 @@ const MenuItems = ({
                                  background: "transparent",
                                  color:
                                     subItem.key === selectedMenuKey
-                                       ? "#1677ff"
+                                       ? "red"
                                        : item.textColor, // Ganti warna teks submenu item sesuai keinginan
                                  fontWeight: "500",
                               }}
@@ -228,7 +228,7 @@ const MenuItems = ({
                                  padding: "7px",
                                  backgroundColor:
                                     item.key === selectedMenuKey
-                                       ? "#1677ff"
+                                       ? "red"
                                        : "inherit",
                                  color:
                                     item.key === selectedMenuKey ? "white" : "",
@@ -256,7 +256,7 @@ const MenuItems = ({
                                  : "inherit",
                            color:
                               selectedMenuKey === item.key
-                                 ? "#1677ff"
+                                 ? "red"
                                  : "inherit", // Ganti warna teks saat diklik
                            fontWeight: "500", // Membuat teks tebal
                            textDecoration: "none", // Menghilangkan garis bawah atau decoration
@@ -540,11 +540,12 @@ const MenuItems = ({
                      {loading ? <Spin size="small" /> : "Logout"}
                   </Button> */}
                   <CustomButton
+                     style={{ backgroundColor:"red"}}
                      loading={loading}
                      onClick={handleLogoutClick}
                      icon={<LogoutOutlined />}
                   >
-                     Logout
+                     Keluar
                   </CustomButton>
                </div>
             </Menu>

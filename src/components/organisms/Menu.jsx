@@ -45,7 +45,7 @@ const MenuComponent = ({
                               padding: "7px",
                               backgroundColor:
                                  item.key === selectedMenuKey
-                                    ? "#1677ff"
+                                    ? "red"
                                     : "inherit",
                               color:
                                  item.key === selectedMenuKey ? "white" : "",

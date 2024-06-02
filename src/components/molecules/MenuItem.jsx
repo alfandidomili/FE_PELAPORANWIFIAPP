@@ -13,7 +13,7 @@ const MenuItem = ({ item, selectedMenuKey }) => {
          style={{
             backgroundColor: isSelected ? "#fafafa" : "inherit",
             boxShadow: isSelected ? "0 20px 27px rgb(0 0 0 / 5%)" : "inherit",
-            color: isSelected ? "#1677ff" : "inherit",
+            color: isSelected ? "red" : "inherit",
             fontWeight: "500",
             textDecoration: "none",
             marginBottom: "18px",
