@@ -26,7 +26,7 @@ const HeaderLayoutPage = ({
             style={{
                padding: 0,
                background: colorBgContainer,
-               backgroundColor: "#3E54AC",
+               backgroundColor: "#7c0a02",
                display: "flex",
                alignItems: "center",
                justifyContent: "space-between",

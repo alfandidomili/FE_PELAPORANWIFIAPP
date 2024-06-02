@@ -31,7 +31,7 @@ const HeaderLayout = ({ collapsed, setCollapsed, firstName }) => {
             />
             <div>
                <span style={{ color: "white", fontWeight: 500 }}>
-                  Welcome, {firstName}
+                  Hello, {firstName}
                </span>
             </div>
          </div>
@@ -51,7 +51,7 @@ const HeaderLayout = ({ collapsed, setCollapsed, firstName }) => {
                </div> */}
             <Input
                className="header-search mx-lg-3"
-               placeholder="Type here..."
+               placeholder="Telusuri..."
                prefix={<SearchOutlined />}
             />
             <div>

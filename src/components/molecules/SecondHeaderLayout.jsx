@@ -36,7 +36,7 @@ const HeaderPageLayout = ({
                   style={{
                      fontWeight: "500",
                      fontSize: "20px",
-                     color: "#1677ff",
+                     color: "#fe3e41",
                      padding: 0,
                      margin: 0,
                      lineHeight: "20px",
@@ -48,7 +48,7 @@ const HeaderPageLayout = ({
                   style={{
                      fontWeight: "100",
                      fontSize: "12px",
-                     color: "#1677ff",
+                     color: "#fe3e41",
                      padding: 0,
                      margin: 0,
                      lineHeight: "20px",
@@ -63,7 +63,7 @@ const HeaderPageLayout = ({
                      type={type}
                      icon={icon}
                      onClick={onClick}
-                     style={{ border: "none", boxShadow: "none" }}
+                     style={{ backgroundColor:"#fe3e41", border: "none", boxShadow: "none" }}
                   >
                      {buttonName}
                   </Button>
