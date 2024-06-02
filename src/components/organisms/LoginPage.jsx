@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { loginRequest } from "../../redux/actions/authActions";
 import LoginForm from "../molecules/LoginForm";
 import { UserOutlined, LockOutlined, GoogleOutlined } from "@ant-design/icons";
-import loginImage from "../../../src/assets/bg-signup.jpg";
+import loginImage from "../../../src/assets/bg1.png";
 import { toast } from "react-toastify";
 
 const { Title } = Typography;
@@ -63,18 +63,16 @@ const LoginPage = ({
                }}
             >
                <Title level={2} style={{ color: "white" }}>
-                  Login
+                  TELKOM GROUP TONDANO
                </Title>
                <Title level={5} style={{ color: "white" }}>
-                  Use these awesome forms to login or create new account in{" "}
-                  <br />
-                  your project for free.
+                  Menjadi perusahaan yang unggul dalam penyelenggaraan Telecommunication, Information, Media, Edutainment dan Services T.I.M.E.S di Kawasan Regional{" "}
                </Title>
             </div>
          </Col>
          <Col span={8} style={{ padding: "20px" }}>
             <Title level={5} style={{ fontWeight: "700", fontSize: "large" }}>
-               <span style={{}}>Hi</span> there !
+               <span style={{}}>Hi,</span> Selamat Datang di
             </Title>
             <Title
                level={5}
@@ -84,19 +82,11 @@ const LoginPage = ({
                   fontSize: "small",
                }}
             >
-               Have we meet before?
+               Aplikasi Pelaporan Mitra IndiHome
             </Title>
             <Row justify={"center"} align={"middle"}>
                <Col span={24}>
                   <Form.Item style={{ margin: "0" }}>
-                     <Button
-                        type="default"
-                        htmlType="button"
-                        icon={<GoogleOutlined />}
-                        block
-                     >
-                        Login with Google
-                     </Button>
                   </Form.Item>
                </Col>
             </Row>
@@ -111,7 +101,7 @@ const LoginPage = ({
                      type="secondary"
                      style={{ fontSize: "12px", display: "inline-block" }}
                   >
-                     Or Sign In with usernameId
+                     Telkom Group Kandatel Minahasa Plasa Tondano
                   </Typography.Text>
                </Col>
                <Col span={8}>
