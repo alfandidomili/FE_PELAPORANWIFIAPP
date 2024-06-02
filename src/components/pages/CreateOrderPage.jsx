@@ -114,7 +114,7 @@ const CreateOrderPage = ({
    }, [categoriesService, categoriesStatus, mitra]);
 
    const assignedStatus = categoriesStatus.filter(
-      (category) => category.statusName === "Assigned"
+      (category) => category.statusName === "Terkirim"
    );
    return (
       <>
@@ -122,7 +122,11 @@ const CreateOrderPage = ({
             TitleHeaderPage={"Create Order"}
             buttonName={"dashboard/order/create"}
             TitleSecondHeaderPage={
-               <Link to={"/dashboard/Order"}>
+               <Link 
+               style={{
+                  color:"red",
+               }} 
+               to={"/dashboard/Order"}>
                   {<ArrowLeftOutlined />} Back to Order
                </Link>
             }
@@ -271,8 +275,13 @@ const CreateOrderPage = ({
                      </Select>
                   </Form.Item>
                   <Form.Item>
-                     <Button type="primary" htmlType="submit">
-                        Create Order
+                     <Button 
+                     type="primary" 
+                     htmlType="submit"
+                     style={{backgroundColor:"red"}}
+                     
+                     >
+                        Buat Order
                      </Button>
                   </Form.Item>
                </Card>

@@ -530,13 +530,13 @@ const OrderPage = ({
                visible={deleteModalVisible}
                // onOk={handleDeleteConfirm}
                onOk={
-                  selectedOrderStatus === "Assigned"
+                  selectedOrderStatus === "Terkirim"
                      ? handleDeleteConfirm
                      : handleDeleteCancel
                }
                onCancel={handleDeleteCancel}
             >
-               {selectedOrderStatus === "Assigned" ? (
+               {selectedOrderStatus === "Terkirim" ? (
                   <p>Are you sure you want to delete this order?</p>
                ) : (
                   <p>

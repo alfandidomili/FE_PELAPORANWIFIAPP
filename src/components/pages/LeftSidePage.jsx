@@ -7,9 +7,9 @@ const { Sider } = Layout;
 
 const LeftSide = ({ collapsed }) => {
    const titleContent = collapsed ? (
-      <MoneyCollectOutlined style={{ fontSize: "16px", color: "black" }} />
+      <MoneyCollectOutlined style={{ alignItems:"start", fontSize: "16px", color: "black" }} />
    ) : (
-      "Laporan WIFI"
+      "PELAPORAN TEKNISI"
    );
    return (
       <Sider

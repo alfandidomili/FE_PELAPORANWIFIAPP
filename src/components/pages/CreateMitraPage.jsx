@@ -98,8 +98,8 @@ const createMitraPage = ({
    return (
       <>
          <MainTemplatePageCountainer
-            TitleHeaderPage={"Create Mitra"}
-            buttonName={"back"}
+            TitleHeaderPage={"Buat Akun Mitra"}
+            buttonName={"Kembali"}
             type={"primary"}
             linked={"/dashboard/Mitra"}
          />
@@ -207,8 +207,9 @@ const createMitraPage = ({
                         type="primary"
                         htmlType="submit"
                         disabled={loading}
+                        style={{backgroundColor:"red"}}
                      >
-                        {loading ? <Spin size="small" /> : "Create Mitra"}
+                        {loading ? <Spin size="small" /> : "Buat Akun"}
                      </Button>
                   </Form.Item>
                </Card>
