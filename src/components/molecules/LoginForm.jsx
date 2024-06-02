@@ -9,7 +9,7 @@ const LoginForm = ({ onFinish, loading, validationErrors }) => {
       <Form name="login" onFinish={onFinish} layout="vertical">
          <Form.Item
             name="usernameId"
-            label={<strong style={{ fontWeight: "500" }}>usernameId</strong>}
+            label={<strong style={{ fontWeight: "500" }}>Nomor Id</strong>}
             // rules={[
             //    { required: true, message: "Please input your usernameId!" },
             // ]}
@@ -30,11 +30,11 @@ const LoginForm = ({ onFinish, loading, validationErrors }) => {
                   : ""
             }
          >
-            <Input prefix={<UserOutlined />} placeholder="usernameId" />
+            <Input prefix={<UserOutlined />} placeholder="Masukkan Nomor Id" />
          </Form.Item>
          <Form.Item
             name="password"
-            label={<strong style={{ fontWeight: "500" }}>Password</strong>}
+            label={<strong style={{ fontWeight: "500" }}>Sandi</strong>}
             // rules={[
             //    { required: true, message: "Please input your password!" },
             // ]}
@@ -54,7 +54,7 @@ const LoginForm = ({ onFinish, loading, validationErrors }) => {
                   : ""
             }
          >
-            <Input.Password prefix={<LockOutlined />} placeholder="Password" />
+            <Input.Password prefix={<LockOutlined />} placeholder="Masukkan Sandi" />
          </Form.Item>
          <Row
             justify="space-between"
@@ -67,11 +67,8 @@ const LoginForm = ({ onFinish, loading, validationErrors }) => {
                   valuePropName="checked"
                   style={{ margin: 0, padding: 0 }}
                >
-                  <Checkbox>Remember me</Checkbox>
+                  <Checkbox>Ingat Sandi</Checkbox>
                </Form.Item>
-            </Col>
-            <Col xs={12} style={{ textAlign: "right", margin: 0, padding: 0 }}>
-               <Link to="/forgot-password">Forgot Password</Link>
             </Col>
          </Row>
          <Row justify="space-between" align="middle">
@@ -82,8 +79,20 @@ const LoginForm = ({ onFinish, loading, validationErrors }) => {
                      htmlType="submit"
                      block
                      disabled={loading}
+                     Style = {{
+                        width: "100%",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        color: isHovered ? "red" : "white",
+                        backgroundColor: isHovered ? "white" : "#fe3e41",
+                        border: isHovered ? "1px solid red" : "1px solid #fe3e41",
+                        transition: "all 0.3s ease",
+                        cursor:"pointer"
+                        }}
                   >
                      {loading ? <Spin size="small" /> : "Login"}
+                     
                   </Button>
                </Form.Item>
             </Col>
