@@ -83,7 +83,7 @@ const UpdateEvidenceAdmin = ({
    return (
       <>
          <MainTemplatePageContainer
-            TitleHeaderPage="Edit Order"
+            TitleHeaderPage="Edit Evidence Mitra"
             buttonName="Back"
             type="primary"
             linked="/dashboard/EvidenceMitra"
@@ -190,7 +190,7 @@ const UpdateEvidenceAdmin = ({
                   </Select>
                </Form.Item>
                <Form.Item>
-                  <Button type="primary" htmlType="submit" loading={loading}>
+                  <Button style={{backgroundColor:"red"}} type="primary" htmlType="submit" loading={loading}>
                      Update Order
                   </Button>
                </Form.Item>
